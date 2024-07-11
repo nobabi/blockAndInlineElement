@@ -4,39 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+.flex-container >div{
+    background-color: dodgerblue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+    </style>
 </head>
 <body>
-    <div>
-        Difference between block elements and inline elements
-Last Updated : 31 Oct, 2022
-The inline and block elements of HTML are one of the important areas where web developers often get confused because they were unable to know which are inline and block elements which may cause clumsiness in a webpage in case he assumes some element to be a block but it is an inline element which causes next element comes next to it.
+    <h1>Flexible Items</h1>
 
-So let us see the differences between the inline and block elements in HTML and the different frequently used inline and block HTML elements. 
+    <div class="flex-container">
+      <div style="order: 3">1</div>
+      <div style="order: 2">2</div>
+      <div style="order: 4">3</div> <!-- Header -->
+<div class="header">
+  <h1>Responsive Image Gallery</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
 
-Block elements: They consume the entire width available irrespective of their sufficiency. They always start in a new line and have top and bottom margins. It does not contain any other elements next to it.
-
-Examples of Block elements:
-
-<h1>-<h6> : This element is used for including headings of different sizes ranging from 1 to 6.
-<div>: This is a container tag and is used to make separate divisions of content on the web page.
-<hr>: This is an empty tag and is used for separating content by horizontal lines.
-<li>: This tag is used for including list items of an ordered or unordered list.
-<ul>: This tag is used to make an unordered list.
-<ol>: This tag is used to make an ordered list.
-<p>: This tag is used to include paragraphs of content in the webpage.
-<table>: This tag is used for including the tables in the webpage when there is a need for tabular data.
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/falls2.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+    <img src="/w3images/nature.jpg" style="width:100%">
+    <img src="/w3images/mist.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+  </div>
   
- 
-
-HTML 5 Semantic block elements:
-
-<header>: This tag is used for including all the main things of the webpage like navbar, logos, and heading of the webpage.
-<nav>: This tag helps to navigate through different sections by including different blocks of hyperlinks in the webpage.
-<footer>:  This contains all information about the authorization, contact, and copyright details of the webpage.
-<main>: The main content of the webpage resides in this tag.
-<section> : This is used separate different sections in the webpage.
-<article>: This tag is used to include different independent articles on the webpage.
-<aside>: This tag is used to mention details of the main content aside.
+  <div class="column">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+    <img src="/w3images/ocean.jpg" style="width:100%">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/mountainskies.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+  </div> 
+   
+  <div class="column">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/falls2.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+    <img src="/w3images/nature.jpg" style="width:100%">
+    <img src="/w3images/mist.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+    <img src="/w3images/ocean.jpg" style="width:100%">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/mountainskies.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+  </div>
+</div>
+      <div style="order: 1">4</div>
     </div>
+    
+    <p>All direct children of a flexible container becomes flexible items.</p>
 </body>
 </html>
